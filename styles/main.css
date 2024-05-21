@@ -11970,7 +11970,7 @@ textarea.form-control-lg {
 }
 
 main {
-  margin-bottom: 150px;
+  margin-bottom: 285px;
 }
 
 html {
@@ -12021,4 +12021,56 @@ footer.footer {
   background-size: cover;
   background-position-y: center;
   filter: brightness(1);
+  z-index: 1;
+}
+
+.hero-text {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: #582C12;
+  font-size: 2em;
+  text-shadow: 2px 2px 4px #f7e7c2;
+}
+
+h1, .h1 {
+  font-family: "Inika", sans-serif !important;
+}
+
+p, a, li, h3, .h3 {
+  font-family: "Kiwi Maru", serif !important;
+}
+
+body {
+  background-color: #009B4D;
+  color: #f7e7c2;
+  font-family: Arial, sans-serif;
+}
+
+.card {
+  background-color: aqua;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 5px 5px 5px #582C12;
+}
+
+.card-jose {
+  height: 75%;
+  width: 75%;
+  background-color: transparent;
+  color: #f7e7c2;
+}
+
+.card-img-top {
+  border-radius: 15px;
+}
+
+.card-text {
+  color: #f7e7c2;
+}
+
+.img-fluid.rounded-circle {
+  border: 0px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px #582C12;
 }/*# sourceMappingURL=main.css.map */

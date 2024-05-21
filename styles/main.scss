@@ -6,7 +6,7 @@
 }
 
 main {
-    margin-bottom: 150px;
+    margin-bottom: 285px;
 }
 
 html {
@@ -58,6 +58,55 @@ footer.footer {
         background-size: cover;
         background-position-y: center;
         filter: brightness(1);
-
+        z-index: 1;
     }
+}
+.hero-text {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: $dark;
+    font-size: 2em;
+    text-shadow: 2px 2px 4px $light;
+    
+}
+
+h1{
+    font-family: $font-family-sans-serif !important;
+}
+p, a, li,h3{
+    font-family: $font-family-serif !important;
+}
+body {
+    background-color: $secondary;
+    color: $light;
+    font-family: Arial, sans-serif;
+}
+
+.card {
+    background-color: aqua;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px $dark;
+}
+
+.card-jose {
+    height: 75%;
+    width: 75%;
+    background-color: transparent;
+    color: $light;
+}
+.card-img-top {
+    border-radius: 15px ;
+}
+
+.card-text {
+    color: $light;
+}
+
+.img-fluid.rounded-circle {
+    border: 0px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px $dark;
+
 }

@@ -22,6 +22,7 @@ html {
     align-items: center;
     justify-content: center;
 }
+
 footer.footer {
     padding: 15px;
     position: absolute;
@@ -32,11 +33,31 @@ footer.footer {
 .custom-nav-link {
     color: $light;
     opacity: 1;
-   
+
 }
 
 .custom-nav-link:hover {
-    color: $light; 
+    color: $light;
     opacity: 0.5;
     transition: opacity 0.3s, color 0.3s;
+}
+
+.hero-scene {
+    margin-bottom: 15px;
+    position: relative;
+    height: 15vh;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url("../assets/zoo/chateauzoo.jpg");
+        background-size: cover;
+        background-position-y: center;
+        filter: brightness(1);
+
+    }
 }

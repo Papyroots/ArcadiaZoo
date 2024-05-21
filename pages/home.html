@@ -1,4 +1,5 @@
 
+
 <div class="hero-scene text-center text-light">
 
     <div class="hero-text">
@@ -60,11 +61,27 @@
         </div>
     </div>
 </div>
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <p class="text-center">Avis des visiteurs</p>
+            <div id="opinion-list">
+                <!-- Opinions will be displayed here -->
+            </div>
+            <div class="d-grid mt-3">
+                <button id="load-more" class="btn btn-warning btn-block text-dark">Voir plus</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../scripts/list_opinions.js"></script>
+
 <div class="container mt-5">
     <div class="row justify-content-center">
         <div class="col-md-6">
-            <h1 class="text-center">Laisser un avis</h1>
-            <form action="" method="POST">
+            <h3 class="text-center">Laisser un avis</h3>
+            <form action="../database/opinion/submit_opinion.php" method="POST">
                 <div class="mb-3">
                     <label for="name_visitor" class="form-label">Votre Nom ou pseudonyme</label>
                     <input type="text" class="form-control" id="name_visitor" name="name_visitor" required>
@@ -74,7 +91,7 @@
                     <textarea class="form-control" id="opinion" name="opinion" rows="3" required></textarea>
                 </div>
                 <div class="d-grid">
-                    <button type="submit" class="btn btn-warning btn-block">Soumettre</button>
+                    <button type="submit" class="btn btn-warning btn-block text-dark">Soumettre</button>
                 </div>
             </form>
         </div>

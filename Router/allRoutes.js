@@ -17,6 +17,8 @@ export const allRoutes = [
 
   // Route pour la page de contact
   new Route("/contact", "Contact", "./pages/contact.html"),
+
+  new Route("/success", "Merci", "./pages/success.html"),
 ];
 
 // Nom du site web

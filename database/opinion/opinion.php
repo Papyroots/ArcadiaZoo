@@ -2,22 +2,22 @@
 class Opinion {
     private $opinionId;
     private $nameVisitor;
-    private $opinion;
-    private $isVisible;
+    private $visitorOpinion;
+    private $isVisible = false;
     private $createdAt;
     private $updatedAt;
 
-    public function __construct($opinionId, $nameVisitor, $opinion, $isVisible, $createdAt, $updatedAt = null) {
+    public function __construct($opinionId, $nameVisitor, $visitorOpinion, $isVisible, $createdAt, $updatedAt = null) {
         $this->opinionId = $opinionId;
         $this->nameVisitor = $nameVisitor;
-        $this->opinion = $opinion;
+        $this->visitorOpinion = $visitorOpinion;
         $this->isVisible = $isVisible;
         $this->createdAt = new DateTime($createdAt);
         $this->updatedAt = $updatedAt ? new DateTime($updatedAt) : null;
     }
 
     // Getters
-    public function getOpinionId() {
+    public function getopinionId() {
         return $this->opinionId;
     }
 
@@ -25,8 +25,8 @@ class Opinion {
         return $this->nameVisitor;
     }
 
-    public function getOpinion() {
-        return $this->opinion;
+    public function getVisitorOpinion() {
+        return $this->visitorOpinion;
     }
 
     public function getIsVisible() {
@@ -50,8 +50,8 @@ class Opinion {
         $this->nameVisitor = $nameVisitor;
     }
 
-    public function setOpinion($opinion) {
-        $this->opinion = $opinion;
+    public function setVisitorOpinion($visitorOpinion) {
+        $this->visitorOpinion = $visitorOpinion;
     }
 
     public function setIsVisible($isVisible) {
@@ -64,5 +64,10 @@ class Opinion {
 
     public function setUpdatedAt($updatedAt) {
         $this->updatedAt = $updatedAt ? new DateTime($updatedAt) : null;
+    }
+
+
+    public function isValid() {
+        return !empty($this->nameVisitor) && !empty($this->visitorOpinion);
     }
 }

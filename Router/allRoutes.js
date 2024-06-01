@@ -4,7 +4,7 @@ import Route from "./Route.js";
 // Déclaration des routes
 export const allRoutes = [
   // Route pour la page d'accueil
-  new Route("/", "Accueil", "./pages/home.html"),
+  new Route("/", "Accueil", "./pages/home.php"),
 
   // Route pour la page des services
   new Route("/services", "Services", "./pages/services.html"),
@@ -18,7 +18,7 @@ export const allRoutes = [
   // Route pour la page de contact
   new Route("/contact", "Contact", "./pages/contact.html"),
 
-  new Route("/success", "Merci", "./pages/success.html"),
+  new Route("/success", "Avis envoyé", "./pages/success.html"),
 ];
 
 // Nom du site web

@@ -12037,28 +12037,29 @@ h1, .h1 {
   font-family: "Inika", sans-serif !important;
 }
 
-p, a, li, h3, .h3 {
+p, a, li, h3, .h3, h4, .h4, h5, .h5, h6, .h6, label {
   font-family: "Kiwi Maru", serif !important;
+  color: #f7e7c2 !important;
 }
 
 body {
   background-color: #009B4D;
   color: #f7e7c2;
-  font-family: Arial, sans-serif;
+  font-family: "Inika", sans-serif;
 }
 
 .card {
-  background-color: aqua;
+  background-color: #357535;
   border: none;
   border-radius: 15px;
   box-shadow: 5px 5px 5px #582C12;
 }
 
-.card-jose {
-  height: 75%;
-  width: 75%;
-  background-color: transparent;
-  color: #f7e7c2;
+.card.jose {
+  background-color: #009B4D;
+  border: none;
+  border-radius: 0px;
+  box-shadow: 0px 0px 0px #582C12;
 }
 
 .card-img-top {
@@ -12073,4 +12074,111 @@ body {
   border: 0px;
   border-radius: 10px;
   box-shadow: 5px 5px 5px #582C12;
+}
+
+.form-label {
+  color: #f7e7c2;
+}
+
+.container {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding: 15px;
+  background-color: #009B4D;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-contact {
+  background-color: #009B4D;
+  color: #f7e7c2;
+  font-family: "Kiwi Maru", serif;
+}
+
+#opinions-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#load-more {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#load-more:hover {
+  background-color: #582C12;
+  color: #f7e7c2;
+}
+
+.row {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.opinion-list {
+  max-width: 75%;
+  margin: 3 auto;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 75%;
+  background-color: #009B4D;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 5px 5px 5px #582C12;
+}
+
+.column.opinion {
+  background-color: #009B4D;
+  border: none;
+  align-content: center;
+}
+
+.opinion-text {
+  color: #f7e7c2 !important;
+  font-family: "Kiwi Maru", serif;
+}
+
+#opinions-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.articles {
+  display: flex;
+  border: 0;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+#load-more {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.opinions .row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.outer-div {
+  padding: 30px;
+  text-align: center;
+}
+
+.inner-div {
+  display: inline-block;
+  padding: 50px;
 }/*# sourceMappingURL=main.css.map */

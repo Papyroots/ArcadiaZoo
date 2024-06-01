@@ -43,7 +43,7 @@ footer.footer {
 }
 
 .hero-scene {
-    margin-bottom: 15px;
+    margin-bottom: 5px;
     position: relative;
     height: 15vh;
 
@@ -61,6 +61,7 @@ footer.footer {
         z-index: 1;
     }
 }
+
 .hero-text {
     position: relative;
     z-index: 2;
@@ -68,16 +69,26 @@ footer.footer {
     color: $dark;
     font-size: 2em;
     text-shadow: 2px 2px 4px $light;
-    
+
 }
 
-h1{
+h1,
+h2 {
     font-family: $font-family-sans-serif !important;
 }
-p,a,li,h3,h4,h5,h6,label{
+
+p,
+a,
+li,
+h3,
+h4,
+h5,
+h6,
+label {
     font-family: $font-family-serif !important;
     color: $light !important;
 }
+
 body {
     background-color: $secondary;
     color: $light;
@@ -85,11 +96,13 @@ body {
 }
 
 .card {
+    margin: 10px;
     background-color: $primary;
     border: none;
     border-radius: 15px;
     box-shadow: 5px 5px 5px $dark;
 }
+
 .card.jose {
     background-color: $secondary;
     border: none;
@@ -97,8 +110,19 @@ body {
     box-shadow: 0px 0px 0px $dark;
 
 }
+
 .card-img-top {
-    border-radius: 15px ;
+    border-radius: 15px;
+}
+
+.card-title {
+    align-content: center;
+    text-align: center;
+    color: $light;
+    font-family: $font-family-serif;
+    text-shadow: 2px 2px 4px $dark;
+    margin-top: 15px;
+
 }
 
 .card-text {
@@ -111,41 +135,47 @@ body {
     box-shadow: 5px 5px 5px $dark;
 
 }
+
 .form-label {
     color: $light;
- 
-  
+
+
 }
 
 .container {
-    margin-top: 15px;
-    margin-bottom: 15px;
+    margin-top: 5px;
+    margin-bottom: 5px;
     padding: 15px;
     background-color: $secondary;
     align-items: center;
     justify-content: center;
 
 }
+
 .form-contact {
     background-color: $secondary;
     color: $light;
     font-family: $font-family-serif;
 }
+
 #opinions-container {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 5px;
 }
+
 #load-more {
     margin-top: 20px;
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
 }
+
 #load-more:hover {
     background-color: $dark;
     color: $light;
 }
+
 .row {
     display: flex;
     align-content: center;
@@ -156,9 +186,8 @@ body {
 }
 
 .opinion-list {
-   
+
     max-width: 75%;
-    margin: 3 auto;
     align-self: center;
     display: flex;
     flex-direction: column;
@@ -169,6 +198,7 @@ body {
     border-radius: 15px;
     box-shadow: 5px 5px 5px $dark;
 }
+
 .column.opinion {
     background-color: $secondary;
     border: none;
@@ -177,9 +207,10 @@ body {
 }
 
 .opinion-text {
-    color: $light !important; 
+    color: $light !important;
     font-family: $font-family-serif;
 }
+
 #opinions-container {
     display: flex;
     flex-direction: column;
@@ -188,7 +219,7 @@ body {
 
 .articles {
     display: flex;
-    border:0;
+    border: 0;
     padding: 10px;
     border-radius: 5px;
 }
@@ -205,11 +236,13 @@ body {
     flex-direction: column;
     align-items: center;
 }
+
 .outer-div {
-     padding: 30px;
-     text-align: center;
+    padding: 30px;
+    text-align: center;
 }
+
 .inner-div {
-     display: inline-block;
-     padding: 50px;
+    display: inline-block;
+    padding: 50px;
 }

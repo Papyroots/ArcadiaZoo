@@ -12006,7 +12006,7 @@ footer.footer {
 }
 
 .hero-scene {
-  margin-bottom: 15px;
+  margin-bottom: 5px;
   position: relative;
   height: 15vh;
 }
@@ -12033,11 +12033,24 @@ footer.footer {
   text-shadow: 2px 2px 4px #f7e7c2;
 }
 
-h1, .h1 {
+h1, .h1,
+h2,
+.h2 {
   font-family: "Inika", sans-serif !important;
 }
 
-p, a, li, h3, .h3, h4, .h4, h5, .h5, h6, .h6, label {
+p,
+a,
+li,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6,
+label {
   font-family: "Kiwi Maru", serif !important;
   color: #f7e7c2 !important;
 }
@@ -12049,6 +12062,7 @@ body {
 }
 
 .card {
+  margin: 10px;
   background-color: #357535;
   border: none;
   border-radius: 15px;
@@ -12066,6 +12080,15 @@ body {
   border-radius: 15px;
 }
 
+.card-title {
+  align-content: center;
+  text-align: center;
+  color: #f7e7c2;
+  font-family: "Kiwi Maru", serif;
+  text-shadow: 2px 2px 4px #582C12;
+  margin-top: 15px;
+}
+
 .card-text {
   color: #f7e7c2;
 }
@@ -12081,8 +12104,8 @@ body {
 }
 
 .container {
-  margin-top: 15px;
-  margin-bottom: 15px;
+  margin-top: 5px;
+  margin-bottom: 5px;
   padding: 15px;
   background-color: #009B4D;
   align-items: center;
@@ -12098,7 +12121,7 @@ body {
 #opinions-container {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 5px;
 }
 
 #load-more {
@@ -12124,7 +12147,6 @@ body {
 
 .opinion-list {
   max-width: 75%;
-  margin: 3 auto;
   align-self: center;
   display: flex;
   flex-direction: column;

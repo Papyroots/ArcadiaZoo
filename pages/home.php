@@ -79,7 +79,7 @@ require_once '../database/config_database.php';
             <?php foreach ($opinions as $opinion): ?>
                 <div class="opinion-list m-3 p-3 text-light bg-primary inner-div">
                     <p class="opinion-text">
-                    <h4 class="opinion-text"><?= $opinion['nameVisitor'] ?></h4>
+                    <h4 class="text-start"><?= $opinion['nameVisitor'] ?></h4>
                     <h6 class="opinion-text"><?= $opinion['createdAt'] ?></h6>
                     <h6 class="opinion-text"><?= $opinion['visitorOpinion'] ?></h6>
                 </div>

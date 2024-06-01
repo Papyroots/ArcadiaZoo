@@ -38,7 +38,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" ) {
         // Exécution de la requête
         $stmt->execute();
 
-     // 
+        
         exit;
     } catch (PDOException $e) {
         echo "Erreur PDO : " . $e->getMessage();
